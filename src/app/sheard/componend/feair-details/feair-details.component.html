@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-body">
+         <img [ngStyle]="{width: '100%', height: '70vh'}"   src="{{objSend?.bannerUrl}}"
+         alt="dream-img">>
+          
+         <div>
+           <div >
+            <h1>{{objSend?.fairName}}</h1>
+            <p>{{objSend?.startDate | date : 'short'}}</p>
+           </div>
+         </div>
+    </div>
+</div>

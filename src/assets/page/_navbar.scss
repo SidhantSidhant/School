@@ -1,0 +1,18 @@
+
+img{
+    height : 5rem;
+    width: 5rem;
+}
+.link, .link_2{
+    background-color: aqua;
+    @include btnCommon;
+    align-self: flex-start;
+}
+.link_2{
+    background-color: green;
+    align-self: flex-end;
+}
+select{
+    width: 4rem;
+    height: 2rem;
+}

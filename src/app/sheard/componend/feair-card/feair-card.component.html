@@ -1,0 +1,16 @@
+<div class="card" #card (click) = "onclickCard(card)" > 
+    <!-- [ngStyle]="{height: '200px', margin: '1rem' ,width: '600px'}" -->
+    <div class="row">
+        <div class="col-md-3">
+            <img src="https://recruitment.issapi.info/assets/images/ISS_1800.jpg" class="img-fluid" alt="Iss school"
+                title="iss school">
+        </div>
+        <div class="col-md-9">
+            <!-- <h5 class="text-capitalize">{{fearsarr.fairName}}</h5> -->
+            <ng-content select="h1"></ng-content>
+            <input type="checkbox" name="" id=""><span>{{fearsarr.startDate * 1000 | date}} {{fearsarr.endDate * 1000 | date}}</span>
+            <p><i class="fa-solid fa-location-dot"></i></p>
+            <span>{{fearsarr.location.state}},{{fearsarr.location.city}} {{fearsarr.location.country}}</span>
+        </div>
+    </div>
+</div>

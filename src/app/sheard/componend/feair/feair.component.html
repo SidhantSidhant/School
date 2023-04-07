@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div *ngFor="let feair of fearesArray" [ngStyle]="{}" >
+                <app-feair-card [fearsarr]="feair"  (feairsObject)="getobjinThe($event)">
+                    <h1>{{feair.fairName}}</h1>
+                </app-feair-card>
+                <!-- arr.forEach((ele) =>{
+                    cl(ele)
+               }) -->
+            </div>
+        </div>
+         <div class="col-md-8">
+                <app-feair-details  [objSend]="objvalue" ></app-feair-details>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
